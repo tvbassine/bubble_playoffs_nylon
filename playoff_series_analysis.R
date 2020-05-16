@@ -9,8 +9,7 @@ set.seed(16)
 par(mar=c(5.1, 4.1, 4.1, 2.1))
 par(mfrow = c(1,1))
 
-setwd("~/Desktop/Threes and Layups Articles/Playoff Probabilities/what_if_playoffs_were_best_of_3")
-out <- read.csv('playoff_games_2003_2018.csv', stringsAsFactors = F)
+out <- read.csv('https://raw.githubusercontent.com/tvbassine/bubble_playoffs_nylon/master/playoff_games_2003_2018.csv', stringsAsFactors = F)
 
 # Probability of winning an individual playoff game:
 summary(fit <- lm(result ~ pd_diff, data = out))
